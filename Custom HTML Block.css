@@ -1,0 +1,71 @@
+ .logo-card {
+        background-color: transparent; 
+        border: none; /* Removed the border */
+        padding: 0; /* Optionally, remove padding */
+        width: 1000px; /* Width of identity card */
+        height: 250px; /* Height for hemisphere effect */
+        overflow: hidden; /* Ensures content doesn't overflow */
+        position: relative; /* Necessary for absolute positioning of img */
+        margin-bottom: 30px; /* Space below logo */
+        border-radius: 15px;
+    }
+
+    h1{
+        font-family :'Poppins', sans-serif;
+    }
+  .card-row {
+        border-radius: 20px;
+        display: flex; /* Use flexbox for card alignment */
+        /*justify-content: center; /* Center the cards in the row */
+        flex-wrap: wrap; /* Allow cards to wrap if needed */
+        gap: 10px; /* Space between cards */
+    }
+    p{
+        color:black;
+    }
+
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        width: 242px; /* Adjust width for identity card size */
+        height: 230px;
+        flex-shrink: 0; /* Prevent shrinking */
+    }
+/* /* Radial Gradient Backgrounds for Cards */
+    .info-card { 
+        background: radial-gradient(circle, #ADD8E6, #87CEEB); 
+        /* Radial Gradient for Employee Information */
+    }
+    .attendance-card { 
+        background: radial-gradient(circle,   #ecc0e6  , #ebaaa0 ); /* Radial Gradient for Attendance Details */
+    }
+    .leave-card { 
+        background: radial-gradient(circle,  #8bd3ff ,    #6890a9  ); /* Radial Gradient for Leave Balance */
+    }
+    .holidays-card { 
+        background: radial-gradient(circle, #efd3e5,   #faa6c6 ); /* Radial Gradient for Upcoming Holidays */
+    }
+    
+    
+    
+  #root_element {
+    position: relative; /* Establishes a positioning context */
+    height: 100vh; /* Full viewport height */
+}
+
+#digitalClock {
+    position: absolute; /* Position relative to the nearest positioned ancestor */
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Distance from the right */
+    color: white; /* Set text color to white */
+    font-family: 'Arial', sans-serif; /* Optional: Change font */
+    font-size: 18px; /* Optional: Adjust font size */
+    text-align: right; /* Align text to the right */
+    /* Remove background, padding, and border styles */
+    background-color: transparent; /* Ensure no background color */
+    padding: 0; /* Remove padding */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove shadow */
+}
+
