@@ -1,0 +1,57 @@
+<div class="dashboard">
+
+    <!-- Company Logo -->
+    <div class="logo-card">
+        <img src="http://erpdevelop.icfoss.org/files/226V7JCT_output_0.jpeg" alt="Company Logo" />
+    </div>
+        <p id="digitalClock" style="font-weight: bold; font-size: 25px;">Your time here</p>
+
+    <h2>Welcome to ICFOSS ERP! </h2>
+    <br>
+    <!-- Card Row -->
+    <div class="card-row">
+
+        <!-- Employee Basic Information -->
+        <a href="http://erpdevelop.icfoss.org/app/employee/view/list" style="text-decoration: none; color: inherit;"> 
+            <div class="card info-card" id="employee_info">
+                <h3>Employee Basic Information</h3>
+                <p>Employee ID: <span id="employee_id"></span></p>
+                <p>Name: <span id="employee_name"></span></p>
+                <p>Designation: <span id="employee_designation"></span></p>
+                <p>Email ID: <span id="employee_email_id"></span></p>
+            </div>
+        </a>
+
+        <!-- Attendance Details of Last Two Days -->
+        <a href="http://erpdevelop.icfoss.org/app/attendance/view/list" style="text-decoration: none; color: inherit;">
+            <div class="card attendance-card" id="attendance_info">
+                <h3>Attendance Details</h3>
+                <p><span id="attendance_day1"></span> : <span id="attendance_status1"></span></p>
+                <p><span id="attendance_day2"></span> : <span id="attendance_status2"></span></p>
+            </div>
+        </a>
+
+        <!-- Leave Balance -->
+        <a href="http://erpdevelop.icfoss.org/app/query-report/Employee%20Leave%20Balance%20Report" style="text-decoration: none; color: inherit;">
+            <div class="card leave-card" id="leave_info">
+                <h3>Leave Balance</h3>
+                <p>Casual Leave Balance: <span id="casual_leave_balance"></span></p>
+                <p>Earned Leave Balance: <span id="earned_leave_balance"></span></p>
+            </div>
+        </a>
+        <!-- Upcoming Holidays -->
+        <a href="http://erpdevelop.icfoss.org/app/holiday-list/view/calendar/default" style="text-decoration: none; color: inherit;">
+            <div class="card holidays-card" id="holidays_info">
+                <h3>Upcoming Holidays</h3>
+                <p><span id="holiday1"></span></p>
+                <p><span id="holiday2"></span></p>
+            </div>
+        </a>
+    </div>
+
+    </div>
+    
+    <div id="root_element">
+    <div id="digitalClock"></div>
+</div>
+
